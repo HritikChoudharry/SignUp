@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title> Form </title>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+        <script src="signin.js"></script>
+
+    </head>
+
+    <body>
+        <h1> Form </h1>
+        <div id="Formcontainer">
+            <input type="email" placeholder="email" id="email"/>
+            <input type="password" placeholder="password" id="password"/>
+            <input type="DOB" placeholder="DOB" id="DOB"/>
+            <button onclick="signUp()" id="signUp"> Sign Up </button>
+            <button onclick="signIn()" id="signIn"> Sign In </button>
+            <button onclick="signOut()" id="signOut"> Sign Out </button>
+
+        </div>
+    </body>
+
+    <style>
+
+        body{
+            background:linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+        }
+        h1{
+            background-color:whitesmoke;
+            margin: 100px auto;
+            text-align: center;
+            color: black;
+            font-style: italic;
+        }
+        #Formcontainer{
+            background-color: white;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            width: 25%;
+            height: 45%;
+            margin: 10px auto;
+        }
+        #email{
+            width: 70%;
+            height: 40px;
+            display: block;
+            margin: 21 auto;
+            padding: auto;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+        }
+        #password{
+            width: 70%;
+            height: 40px;
+            display: block;
+            margin: 10 auto;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+        }
+        #DOB{
+            width: 70%;
+            height: 40px;
+            display: block;
+            margin: 10 auto;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+        }
+        #signUp{
+            background-color: #ff4d4d;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 20px;
+            margin-left: 54px;
+        }
+        #signIn{
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 15px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+        }
+        #signOut{
+            background-color:orangered;
+            color: black;
+            border: none;
+            padding: 10px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 12px;
+            margin-left: 112px;
+        }
+        button:hover{
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</html>
